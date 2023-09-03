@@ -26,7 +26,6 @@ public class Actor {
 		this.lastName = lastName;
 	}
 
-	
 	public List<Film> getFilms() {
 		return films;
 	}
@@ -62,19 +61,14 @@ public class Actor {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Actor [id=");
+		builder.append("Actor ID= ");
 		builder.append(id);
-		builder.append(", firstName=");
+		builder.append(", First Name= ");
 		builder.append(firstName);
-		builder.append(", lastName=");
+		builder.append(", Last Name= ");
 		builder.append(lastName);
-		builder.append(", films=");
-		builder.append(films);
-		builder.append("]");
 		return builder.toString();
 	}
-
-	
 
 	@Override
 	public int hashCode() {
