@@ -56,7 +56,7 @@ public class FilmQueryApp {
 				input.nextLine();
 				System.out.println("Please enter keyword");
 				String keyword = input.nextLine();
-				if (db.findFilmsByKeyword(keyword).size() < 0) {
+				if (db.findFilmsByKeyword(keyword).size() > 0) {
 					System.out.println(db.findFilmsByKeyword(keyword));
 				} else {
 					System.out.println("There are no films containing that keyword, stop wasting my time");
